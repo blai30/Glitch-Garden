@@ -982,6 +982,7 @@ GameObject:
   - component: {fileID: 1869508076}
   - component: {fileID: 1869508075}
   - component: {fileID: 1869508077}
+  - component: {fileID: 1869508078}
   m_Layer: 5
   m_Name: Fade Panel
   m_TagString: Untagged
@@ -1046,9 +1047,26 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1869508073}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29274918c3cad6e4fafd55f7707d86b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fadeInTime: 2
+--- !u!95 &1869508078
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869508073}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4205f5eaed6d2714f8230769934a8391, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
