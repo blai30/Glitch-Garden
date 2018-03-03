@@ -10,11 +10,17 @@ public class FadeIn : MonoBehaviour {
     private Color currentColor = Color.black;
 	
 	void Start() {
-		
+		fadePanel = GetComponent<Image>();
 	}
 	
 	void Update() {
-		
+		if (Time.timeSinceLevelLoad < fadeInTime) {
+            float alphaChange = Time.deltaTime / fadeInTime;
+            currentColor.a -= alphaChange;
+            fadePanel.color = currentColor;
+        } else {
+            gameObject.SetActive(false);
+        }
 	}
 
 }
