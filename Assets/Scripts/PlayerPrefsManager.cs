@@ -19,5 +19,13 @@ public class PlayerPrefsManager : MonoBehaviour {
     public static float GetMasterVolume() {
         return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
     }
+
+    public static void UnlockLevel(int level) {
+        if (level <= Application.levelCount - 1) {
+            PlayerPrefs.SetInt(LEVEL_KEY + level.ToString(), 1); // Use 1 for true
+        } else {
+            Debug.LogError("Trying to unlock level not in build order");
+        }
+    }
 	
 }
