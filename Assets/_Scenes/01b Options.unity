@@ -500,6 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 1863332085}
+  difficultySlider: {fileID: 1126909674}
   levelManager: {fileID: 114478279724525322, guid: 3903a97c7d6d2d945a542f546395f551,
     type: 2}
 --- !u!1 &821594090
@@ -864,7 +865,7 @@ RectTransform:
   m_GameObject: {fileID: 1126909672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.000007, y: 1.000007, z: 1.000007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1570001448}
   - {fileID: 497644929}
