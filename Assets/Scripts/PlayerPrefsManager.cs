@@ -27,5 +27,28 @@ public class PlayerPrefsManager : MonoBehaviour {
             Debug.LogError("Trying to unlock level not in build order");
         }
     }
+
+    public static bool IsLevelUnlocked(int level) {
+        int levelValue = PlayerPrefs.GetInt(LEVEL_KEY + level.ToString());
+        bool isLevelUnlocked = (levelValue == 1);
+        if (level <= Application.levelCount - 1) {
+            return isLevelUnlocked;
+        } else {
+            Debug.LogError("Trying to query level not in build order");
+            return false;
+        }
+    }
+
+    public static void SetDifficulty(float difficulty) {
+        if (difficulty >= 0f && difficulty <= 1f) {
+            PlayerPrefs.SetFloat(DIFFICULTY_KEY, difficulty);
+        } else {
+            Debug.LogError("Difficulty out of range");
+        }
+    }
+
+    public static float GetDifficulty() {
+        return PlayerPrefs.GetFloat(DIFFICULTY_KEY);
+    }
 	
 }
