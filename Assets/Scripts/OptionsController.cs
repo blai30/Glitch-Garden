@@ -18,13 +18,17 @@ public class OptionsController : MonoBehaviour {
 	
 	void Update() {
 		musicManager.SetVolume(volumeSlider.value);
-        PlayerPrefsManager.SetDifficulty(difficultySlider.value);
 	}
 
     public void SaveAndExit() {
         PlayerPrefsManager.SetMasterVolume(volumeSlider.value);
         PlayerPrefsManager.SetDifficulty(difficultySlider.value);
         levelManager.LoadLevel("01a Start");
+    }
+
+    public void SetDefault() {
+        volumeSlider.value = 0.8f;
+        difficultySlider.value = 2f;
     }
 
 }
