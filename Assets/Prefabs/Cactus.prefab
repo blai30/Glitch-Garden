@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4684534967654202}
   - component: {fileID: 95115007579582128}
   - component: {fileID: 212033804369300826}
-  - component: {fileID: 61760396147226476}
+  - component: {fileID: 61113880735405398}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -102,7 +102,7 @@ Transform:
   m_Father: {fileID: 4684534967654202}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61760396147226476
+--- !u!61 &61113880735405398
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -125,7 +125,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!95 &95115007579582128
 Animator:

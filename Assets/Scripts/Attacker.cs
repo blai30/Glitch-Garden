@@ -8,7 +8,8 @@ public class Attacker : MonoBehaviour {
     public float walkSpeed;
 	
 	void Start() {
-		
+		Rigidbody2D myRigidbody = gameObject.AddComponent<Rigidbody2D>();
+        myRigidbody.isKinematic = true;
 	}
 	
 	void Update() {
