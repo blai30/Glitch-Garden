@@ -362,13 +362,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 212033804369300826, guid: e8c049737760d3d48bb4ca29178e196c,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 212033804369300826, guid: e8c049737760d3d48bb4ca29178e196c, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: e8c049737760d3d48bb4ca29178e196c, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &368552066
@@ -413,7 +412,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccbeec0ead033c94785e712ee3265da3, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &695800563
+--- !u!1001 &534975460
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -452,16 +451,39 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 212369185053982224, guid: 238295bf9f0a9d5419eac4ca1c6a1d34, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 238295bf9f0a9d5419eac4ca1c6a1d34, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1024608600 stripped
+--- !u!4 &534975461 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4623868751944734, guid: 238295bf9f0a9d5419eac4ca1c6a1d34,
     type: 2}
-  m_PrefabInternal: {fileID: 695800563}
+  m_PrefabInternal: {fileID: 534975460}
+--- !u!1 &534975462 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1760865839571390, guid: 238295bf9f0a9d5419eac4ca1c6a1d34,
+    type: 2}
+  m_PrefabInternal: {fileID: 534975460}
+--- !u!50 &534975463
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534975462}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &1209936939 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4684534967654202, guid: e8c049737760d3d48bb4ca29178e196c,
@@ -631,7 +653,7 @@ Transform:
   - {fileID: 1209936939}
   - {fileID: 139341170}
   - {fileID: 1649854112}
-  - {fileID: 1024608600}
+  - {fileID: 534975461}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
