@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Attacker))]
 public class Fox : MonoBehaviour {
 
     private Animator anim;
+    private Attacker attacker;
 	
 	void Start() {
 		anim = GetComponent<Animator>();
+        attacker = GetComponent<Attacker>();
 	}
 	
 	void Update() {
@@ -24,10 +27,9 @@ public class Fox : MonoBehaviour {
         if (obj.GetComponent<Stone>()) {
             anim.SetTrigger("jumpTrigger");
         } else {
-            
+            anim.SetBool("isAttacking", true);
+            attacker.Attack(obj);
         }
-
-        Debug.Log("Fox collided with " + collider);
     }
 
 }
