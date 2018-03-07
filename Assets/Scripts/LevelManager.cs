@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour {
 	}
 
     public void LoadNextLevel() {
-        SceneManager.LoadScene(SceneManager.sceneCount + 1);
+        SceneManager.LoadScene(SceneManager.sceneCount);
     }
 
 }

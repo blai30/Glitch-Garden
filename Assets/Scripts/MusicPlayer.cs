@@ -36,9 +36,9 @@ public class MusicPlayer : MonoBehaviour {
     }
 
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode) {
-        Debug.Log("Level Loaded");
-        Debug.Log(scene.name);
-        Debug.Log(mode);
+        Debug.Log("Level Loaded: " + scene.name + " | Mode: " + mode);
+
+        PlayMusic(scene.buildIndex);
     }
 
     // void OnLevelWasLoaded(int level) {
@@ -57,5 +57,22 @@ public class MusicPlayer : MonoBehaviour {
     //     music.loop = true;
     //     music.Play();
     // }
+
+    void PlayMusic(int level) {
+        Debug.Log("MusicPlayer: loaded level " + level);
+        music.Stop();
+
+        if (level == 0) {
+            music.clip = startClip;
+        }
+        if (level == 1) {
+            music.clip = gameClip;
+        }
+        if (level == 2) {
+            music.clip = endClip;
+        }
+        music.loop = true;
+        music.Play();
+    }
 
 }

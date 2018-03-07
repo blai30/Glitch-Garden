@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartVolume : MonoBehaviour {
+public class SetStartVolume : MonoBehaviour {
 
     private MusicManager musicManager;
 	

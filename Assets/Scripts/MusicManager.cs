@@ -28,9 +28,9 @@ public class MusicManager : MonoBehaviour {
     }
 
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode) {
-        Debug.Log("Level Loaded");
-        Debug.Log(scene.name);
-        Debug.Log(mode);
+        Debug.Log("Level Loaded: " + scene.name + " | Mode: " + mode);
+
+        PlayMusic(scene.buildIndex);
     }
 	
 	// void OnLevelWasLoaded(int level) {
@@ -43,6 +43,17 @@ public class MusicManager : MonoBehaviour {
     //         audioSource.Play();
     //     }
     // }
+
+    void PlayMusic(int level) {
+        AudioClip thisLevelMusic = levelMusicChangeArray[level];
+        Debug.Log("Playing clip: " + thisLevelMusic);
+
+        if (thisLevelMusic) {
+            audioSource.clip = thisLevelMusic;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+    }
 
     public void SetVolume(float volume) {
         audioSource.volume = volume;
