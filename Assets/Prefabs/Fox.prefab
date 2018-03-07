@@ -36,8 +36,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4592460895077000}
   - component: {fileID: 95577001792573960}
-  - component: {fileID: 114958642330561908}
+  - component: {fileID: 50806677674822890}
   - component: {fileID: 61442648240309156}
+  - component: {fileID: 114958642330561908}
+  - component: {fileID: 114622554974884416}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -72,6 +74,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50806677674822890
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1772997231539158}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &61442648240309156
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -114,6 +136,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114622554974884416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1772997231539158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51335b3f04672204084488374c3e7400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114958642330561908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24971bbc6c5083499115305a8752ee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 0.4
+  currentSpeed: 0
 --- !u!212 &212724260690643312
 SpriteRenderer:
   m_ObjectHideFlags: 1
