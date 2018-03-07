@@ -26,6 +26,12 @@ public class Attacker : MonoBehaviour {
 
     // Called from the animator at time of actual blow
     public void StrikeCurrentTarget(float damage) {
+        if (currentTarget) {
+            Health health = currentTarget.GetComponent<Health>();
+            if (health) {
+                health.DealDamage(damage);
+            }
+        }
         Debug.Log(name + " caused damage: " + damage);
     }
 

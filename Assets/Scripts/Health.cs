@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
 
-    public float health;
+    public float health = 100f;
 	
 	void Start() {
 		
@@ -13,5 +13,11 @@ public class Health : MonoBehaviour {
 	void Update() {
 		
 	}
+
+    public void DealDamage(float damage) {
+        health -= damage;
+
+        }
+    }
 
 }
