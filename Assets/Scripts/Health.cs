@@ -5,19 +5,17 @@ using UnityEngine;
 public class Health : MonoBehaviour {
 
     public float health = 100f;
-	
-	void Start() {
-		
-	}
-	
-	void Update() {
-		
-	}
 
     public void DealDamage(float damage) {
         health -= damage;
-
+        if (health <= 0) {
+            // Optionally trigger animation
+            DestroyObject();
         }
+    }
+
+    public void DestroyObject() {
+        Destroy(gameObject);
     }
 
 }
