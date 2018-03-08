@@ -7,7 +7,7 @@ public class Shooter : MonoBehaviour {
     public GameObject projectile, projectileParent, gun;
 	
 	void Start() {
-		
+        
 	}
 	
 	void Update() {
