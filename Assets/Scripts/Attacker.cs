@@ -32,7 +32,7 @@ public class Attacker : MonoBehaviour {
                 health.DealDamage(damage);
             }
         }
-        Debug.Log(name + " caused damage: " + damage);
+        Debug.Log(name + " caused " + damage + " damage to " + currentTarget);
     }
 
     public void Attack(GameObject obj) {
