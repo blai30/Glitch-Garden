@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 224457169146887814}
   - component: {fileID: 222069606453338076}
   - component: {fileID: 114551453757650818}
+  - component: {fileID: 61941216962144174}
+  - component: {fileID: 114050721330870780}
   m_Layer: 5
   m_Name: Core Game
   m_TagString: Untagged
@@ -99,6 +101,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &61941216962144174
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088994498442856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1200, y: 675}
+  m_EdgeRadius: 0
 --- !u!114 &114023272448423358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,6 +187,17 @@ MonoBehaviour:
   m_Text: 'Win Condition
 
 '
+--- !u!114 &114050721330870780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088994498442856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b1ff43153fec24e9e6f3ed8f017edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114305275947027686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -422,7 +460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 467.86508, y: -70}
+  m_AnchoredPosition: {x: 1120.65, y: -389.3978}
   m_SizeDelta: {x: 558.7, y: 67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224457169146887814
@@ -480,7 +518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 467.83273, y: 64}
+  m_AnchoredPosition: {x: 479.35, y: -389.39777}
   m_SizeDelta: {x: 558.7, y: 67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224984793443751712
