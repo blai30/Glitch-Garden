@@ -20,6 +20,7 @@ public class Projectile : MonoBehaviour {
 
         if (attacker && health) {
             health.DealDamage(damage);
+            Debug.Log(name + " dealt " + damage + " damage to " + attacker);
             Destroy(gameObject);
         }
     }
