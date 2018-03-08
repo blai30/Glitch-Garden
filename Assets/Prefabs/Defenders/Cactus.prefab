@@ -159,6 +159,7 @@ MonoBehaviour:
   projectile: {fileID: 1118333466962782, guid: 0a568c9cf4e1ab34986c421412ac35f2, type: 2}
   projectileParent: {fileID: 1925513848951902, guid: b143e1f1360c3ae42aa158aebb4f14ac,
     type: 2}
+  gun: {fileID: 1675394705928272}
 --- !u!114 &114710863852902440
 MonoBehaviour:
   m_ObjectHideFlags: 1
