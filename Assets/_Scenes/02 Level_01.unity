@@ -299,6 +299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 467cbad8c81a4684aa01c629cb2be7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 1671370845390986, guid: 8b2009f411714f440976c2e69d992205,
+    type: 2}
 --- !u!4 &139341170 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4241011674984504, guid: 547a6d2e41062b14b9256f1576785dbe,
@@ -515,6 +517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 467cbad8c81a4684aa01c629cb2be7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 1365318247263896, guid: 547a6d2e41062b14b9256f1576785dbe,
+    type: 2}
 --- !u!1 &264562284
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 467cbad8c81a4684aa01c629cb2be7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 1793857678187280, guid: 238295bf9f0a9d5419eac4ca1c6a1d34,
+    type: 2}
 --- !u!1001 &435693509
 Prefab:
   m_ObjectHideFlags: 0
@@ -1370,3 +1376,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 467cbad8c81a4684aa01c629cb2be7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 1468236911489178, guid: e8c049737760d3d48bb4ca29178e196c,
+    type: 2}

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Button : MonoBehaviour {
 
+    public GameObject defenderPrefab;
+    public static GameObject selectedDefender;
     private Button[] buttonArray;
 	
 	void Start() {
@@ -20,6 +22,7 @@ public class Button : MonoBehaviour {
             thisButton.GetComponent<SpriteRenderer>().color = Color.black;
         }
         GetComponent<SpriteRenderer>().color = Color.white;
+        selectedDefender = defenderPrefab;
     }
 
 }
