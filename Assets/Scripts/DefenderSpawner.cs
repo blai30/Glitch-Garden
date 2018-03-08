@@ -14,6 +14,14 @@ public class DefenderSpawner : MonoBehaviour {
 
     void OnMouseDown() {
         print(Input.mousePosition);
+        print(CalculateWorldPointOfMouseClick());
+    }
+
+    Vector2 CalculateWorldPointOfMouseClick() {
+        float mouseX = Input.mousePosition.x;
+        float mouseY = Input.mousePosition.y;
+
+        
     }
 
 }
