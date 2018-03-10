@@ -17,6 +17,7 @@ public class GameTimer : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         levelManager = GameObject.FindObjectOfType<LevelManager>();
         FindYouWin();
+        winLabel.SetActive(false);
     }
 
     void FindYouWin() {
@@ -33,6 +34,7 @@ public class GameTimer : MonoBehaviour {
         bool timeIsUp = Time.timeSinceLevelLoad >= levelSeconds;
         if (timeIsUp && !isEndOfLevel) {
             audioSource.Play();
+            winLabel.SetActive(true);
             Invoke("LoadNextLevel", audioSource.clip.length);
             isEndOfLevel = true;
         }
