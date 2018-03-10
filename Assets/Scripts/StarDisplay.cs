@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Defender : MonoBehaviour {
+public class StarDisplay : MonoBehaviour {
 	
 	void Start() {
 		
@@ -11,9 +11,5 @@ public class Defender : MonoBehaviour {
 	void Update() {
 		
 	}
-
-    public void AddStars(int amount) {
-        print(amount);
-    }
 
 }
