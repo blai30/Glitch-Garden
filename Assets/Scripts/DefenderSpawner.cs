@@ -6,9 +6,12 @@ public class DefenderSpawner : MonoBehaviour {
 	
     public Camera myCamera;
     private GameObject parent;
+    private StarDisplay starDisplay;
 	
 	void Start() {
         parent = GameObject.Find("Defenders");
+        starDisplay = GameObject.FindObjectOfType<StarDisplay>();
+
         if (!parent) {
             parent = new GameObject("Defenders");
         }
