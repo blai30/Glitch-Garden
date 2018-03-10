@@ -154,7 +154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1884726396922332, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}
       propertyPath: m_Name
-      value: Lane4
+      value: Spawner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}
@@ -719,7 +719,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1884726396922332, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}
       propertyPath: m_Name
-      value: Lane1
+      value: Spawner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}
@@ -765,7 +765,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1884726396922332, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}
       propertyPath: m_Name
-      value: Lane5
+      value: Spawner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}
@@ -816,7 +816,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1884726396922332, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}
       propertyPath: m_Name
-      value: Lane3
+      value: Spawner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}
@@ -1098,7 +1098,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1884726396922332, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}
       propertyPath: m_Name
-      value: Lane2
+      value: Spawner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13b7c58866618a84cb7d7bc6497719c7, type: 2}

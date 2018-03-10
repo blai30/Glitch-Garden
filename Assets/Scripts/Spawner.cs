@@ -8,13 +8,13 @@ public class Spawner : MonoBehaviour {
 	
 	void Update() {
 		foreach (GameObject thisAttacker in attackerPrefabArray) {
-            if (isTimeToSpawn(thisAttacker)) {
+            if (IsTimeToSpawn(thisAttacker)) {
                 Spawn(thisAttacker);
             }
         }
 	}
 
-    bool isTimeToSpawn(GameObject attackerGameObject) {
+    bool IsTimeToSpawn(GameObject attackerGameObject) {
         Attacker attacker = attackerGameObject.GetComponent<Attacker>();
 
         float meanSpawnDelay = attacker.seenEverySeconds;

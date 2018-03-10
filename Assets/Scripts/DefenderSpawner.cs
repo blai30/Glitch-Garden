@@ -22,7 +22,7 @@ public class DefenderSpawner : MonoBehaviour {
         Vector2 roundedPos = SnapToGrid(rawPos);
         GameObject defender = Button.selectedDefender;
         Quaternion zeroRot = Quaternion.identity;
-        GameObject newDef = Instantiate(Button.selectedDefender, roundedPos, zeroRot) as GameObject;
+        GameObject newDef = Instantiate(defender, roundedPos, zeroRot) as GameObject;
 
         newDef.transform.parent = parent.transform;
     }

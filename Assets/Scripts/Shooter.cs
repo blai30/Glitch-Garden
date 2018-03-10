@@ -11,6 +11,8 @@ public class Shooter : MonoBehaviour {
 	
 	void Start() {
         animator = GetComponent<Animator>();
+        SetMyLaneSpawner();
+        print(myLaneSpawner);
 
     // Creates a parent if necessary
         projectileParent = GameObject.Find("Projectiles");
@@ -25,9 +27,6 @@ public class Shooter : MonoBehaviour {
         } else {
             animator.SetBool("isAttacking", false);
         }
-
-        SetMyLaneSpawner();
-        print(myLaneSpawner);
 	}
 
     void SetMyLaneSpawner() {
