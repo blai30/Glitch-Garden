@@ -6,8 +6,11 @@ public class Shooter : MonoBehaviour {
 
     public GameObject projectile, gun;
     private GameObject projectileParent;
+    private Animator animator;
 	
 	void Start() {
+        animator = GetComponent<Animator>();
+
         projectileParent = GameObject.Find("Projectiles");
         if (!projectileParent) {
             projectileParent = new GameObject("Projectiles");
