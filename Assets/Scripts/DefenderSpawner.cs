@@ -5,10 +5,26 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour {
 	
     public Camera myCamera;
+    private GameObject parent;
+	
+	void Start() {
+        parent = GameObject.Find("Defenders");
+        if (!parent) {
+            parent = new GameObject("Defenders");
+        }
+	}
 
     void OnMouseDown() {
         print(Input.mousePosition);
         print(SnapToGrid(CalculateWorldPointOfMouseClick()));
+
+        Vector2 rawPos = CalculateWorldPointOfMouseClick();
+        Vector2 roundedPos = SnapToGrid(rawPos);
+        GameObject defender = Button.selectedDefender;
+        Quaternion zeroRot = Quaternion.identity;
+        GameObject newDef = Instantiate(Button.selectedDefender, roundedPos, zeroRot) as GameObject;
+
+        newDef.transform.parent = parent.transform;
     }
 
     Vector2 SnapToGrid(Vector2 rawWorldPos) {
