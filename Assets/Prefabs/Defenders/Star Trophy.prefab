@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5026ddfcf47fba5479248da246e7cf5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starCost: 20
 --- !u!114 &114817479861715616
 MonoBehaviour:
   m_ObjectHideFlags: 1
