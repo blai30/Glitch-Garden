@@ -18,7 +18,11 @@ public class Shooter : MonoBehaviour {
 	}
 	
 	void Update() {
-		
+		if (isAttackerAheadInLane()) {
+            animator.SetBool("isAttacking", true);
+        } else {
+            animator.SetBool("isAttacking", false);
+        }
 	}
 
     private void Fire() {
