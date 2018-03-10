@@ -20,7 +20,7 @@ public class Shooter : MonoBehaviour {
 	}
 	
 	void Update() {
-		if (isAttackerAheadInLane()) {
+		if (IsAttackerAheadInLane()) {
             animator.SetBool("isAttacking", true);
         } else {
             animator.SetBool("isAttacking", false);
@@ -42,8 +42,21 @@ public class Shooter : MonoBehaviour {
         Debug.LogError(name +  " cannot find spawner in lane");
     }
 
-    bool isAttackerAheadInLane() {
-        
+    bool IsAttackerAheadInLane() {
+        // Exit if no attackers in lane
+        if (myLaneSpawner.transform.childCount <= 0) {
+            return false;
+        }
+
+        // If there are attackers, are they ahead?
+        foreach (Transform attacker in myLaneSpawner.transform) {
+            if (attacker.transform.position.x > transform.position.x) {
+                return true;
+            }
+        }
+
+        // Attackers in lane but not ahead
+        return false;
     }
 
     private void Fire() {
