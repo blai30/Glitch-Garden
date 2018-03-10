@@ -25,6 +25,10 @@ public class Shooter : MonoBehaviour {
         }
 	}
 
+    bool isAttackerAheadInLane() {
+        return true;
+    }
+
     private void Fire() {
         GameObject newProjectile = Instantiate(projectile) as GameObject;
         newProjectile.transform.parent = projectileParent.transform;
